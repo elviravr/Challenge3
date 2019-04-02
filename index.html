@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- map api -->
+		<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
+		<!-- tweenmax library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+		<title>Where to land?</title>
+		<link rel="shortcut icon" href="iconmap.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<section class="grid-container">
+		<header class="header">
+			<h1>Where to land?</h1>
+			<form class="searching">
+					<input type="text" name="city" id="city" placeholder="enter city name" />
+					<input type="button" id="search" value="search" />
+			</form>
+			<div id="toggle"><p>Please enter a name of a city above for information.</p></div>
+		</header>
+			<article id="map2">
+				<div class="kaart" id="map"></div>
+			</article> 
+			<article id="info">
+				<div id="toggle2">
+				<h2 id="cityName"></h2><img id="weatherIcon" src="" alt"">
+				<table>
+					<tr>
+						<td>Temperature:</td>
+						<td><p id="temperature"></p></td>
+					</tr>
+					<tr>
+						<td>Windspeed:</td>
+						<td><p id="windspeed"></p></td>
+					</tr>
+					<tr>
+						<td>Pressure:</td>
+						<td><p id="pressure"></p></td>
+					</tr>
+					<tr>
+						<td>Weather:</td>
+						<td><p id="weatherInfo"></p></td>
+					</tr>
+				</table></div>
+			</article>
+		</section>
+		<script src="main.js"></script>
+	</body>
+</html>
